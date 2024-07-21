@@ -2,7 +2,11 @@ import sqlite3
 import os
 
 class Database:
-    def __init__(self, *, database:str) -> None:
+    def __init__(
+            self, 
+            *, 
+            database:str
+        ) -> None:
         self .database=database
         
     def _creat_database(self) -> None:
@@ -27,6 +31,7 @@ class Database:
         if os.path.exists(file:=f'{self.database}'):
             self.con = sqlite3.connect(file)
             self.cur = self.con.cursor()
+
         else:
             import exception_
             raise exception_.DatabaseNotFoundError(f"{file} not found")
