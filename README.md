@@ -45,7 +45,7 @@ db.delete(field="name",value="Bob")
 ## 📃Operation Table
 ### table 
 ```py
-db.table()
+db.table() # initialize
 ```
 > [!NOTE]
 > it has 8 methods for operation table.
