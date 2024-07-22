@@ -48,4 +48,4 @@ db.delete(field="name",value="Bob")
 db.table() # initialize
 ```
 > [!NOTE]
-> it has 8 methods for operation table.
+> With more operations in it.
