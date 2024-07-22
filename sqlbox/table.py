@@ -205,7 +205,7 @@ class table(Database):
     def length(
             self,
             *,
-            field:str
+            field:str 
         ) -> str:
         """
         Retrieves the length of a specified field from a table.
