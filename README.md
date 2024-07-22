@@ -14,7 +14,7 @@ db=sqlbox.sqlbox(database_name="test.db")
 ```
 ### Table
 > [!NOTE]
-> **data type**
+> **data type**<br>
 > `{
 >     int_primary_key='INTEGER PRIMARY KEY',
       text_primary_key='TEXT PRIMARY KEY',
