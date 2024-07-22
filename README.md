@@ -13,6 +13,9 @@ import sqlbox
 db=sqlbox.sqlbox(database_name="test.db")
 ```
 ### Table
+```py
+db.create_table("users",{"id":"int_prinary_key","name":"text","age":"int"})
+```
 > [!NOTE]
 > **data types**<br>
 > ```py
@@ -22,11 +25,7 @@ db=sqlbox.sqlbox(database_name="test.db")
 > float='FLOAT',
 > text='TEXT',
 > blob='BLOB',
-> null='NULL',    
-
-```py
-db.create_table("users",{"id":"int_prinary_key","name":"text","age":"int"})
-```
+> null='NULL', 
 ### Insert Values
 ```py
 db.insert_into(field=("id","name","age"),value=(1,"Bob",11))
