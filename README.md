@@ -4,3 +4,5 @@
 ```py
 pip install sqlbox
 ```
+> [!NOTE]
+> **sqlbox v0.01 has only some basic table operations**
