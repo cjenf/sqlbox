@@ -16,14 +16,14 @@ db=sqlbox.sqlbox(database_name="test.db")
 > [!NOTE]
 > **data type**<br>
 > ```py
-> {int_primary_key='INTEGER PRIMARY KEY',
+> {   int_primary_key='INTEGER PRIMARY KEY',
       text_primary_key='TEXT PRIMARY KEY',
       int='INTEGER',
       float='FLOAT',
       text='TEXT',
       blob='BLOB',
-      null='NULL',
->   }```
+      null='NULL',}
+ ```
 ```py
 db.create_table("users",{"id":"int_prinary_key","name":"text","age":"int"})
 ```
