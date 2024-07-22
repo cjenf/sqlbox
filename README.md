@@ -27,19 +27,19 @@ db=sqlbox.sqlbox(database_name="test.db")
 ```py
 db.create_table("users",{"id":"int_prinary_key","name":"text","age":"int"})
 ```
-### insert values
+### Insert Values
 ```py
 db.insert_into(field=("id","name","age"),value=(1,"Bob",11))
 ```
-### get data
+### Get Data
 ```py
 print(db.get()) # output: [(1, 'Bob', 11)]
 ```
-### update database
+### Update Database
 ```py
 db.update(field_name=("name","age"),value=("Bob",12))
 ```
-### delete
+### Delete
 ```py
 db.delete(field="name",value="Bob")
 ```
