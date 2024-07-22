@@ -39,4 +39,7 @@ print(db.get()) # output: [(1, 'Bob', 11)]
 ```py
 db.update(field_name=("name","age"),value=("Bob",12))
 ```
+### delete
+```py
+db.delete(field="name",value="Bob")
 ```
