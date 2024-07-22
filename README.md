@@ -43,3 +43,9 @@ db.update(field_name=("name","age"),value=("Bob",12))
 db.delete(field="name",value="Bob")
 ```
 ## 📃Operation Table
+### table 
+```py
+db.table()
+```
+> [!NOTE]
+> it has 8 methods of operation table.
