@@ -158,7 +158,7 @@ class table(Database):
             field:str,
             str1:str,
             str2:str
-            ) -> None:
+        ) -> None:
         """
         Replaces all occurrences of `str1` with `str2` in the specified `field` of the table.
 
