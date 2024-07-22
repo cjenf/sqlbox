@@ -1,5 +1,6 @@
 import sqlite3
 import os
+from sqlbox.exception_ import DatabaseNotFoundError, NamingError
 
 class Database:
     def __init__(
@@ -20,8 +21,7 @@ class Database:
             self.cur.close()
 
         else:
-            import exception_
-            raise exception_.NamingError("Database name must be str")
+            raise NamingError("Database name must be str")
         
     def _connect_database(self) -> None: 
         """
@@ -33,5 +33,4 @@ class Database:
             self.cur = self.con.cursor()
 
         else:
-            import exception_
-            raise exception_.DatabaseNotFoundError(f"{file} not found")
+            raise DatabaseNotFoundError(f"{file} not found")
