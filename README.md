@@ -27,3 +27,7 @@ db=sqlbox.sqlbox(database_name="test.db")
 ```py
 db.create_table("users",{"id":"int_prinary_key","name":"text","age":"int"})
 ```
+### insert values
+```py
+db.insert_into(field=("id","name","age"),value=(1,"Bob",11))
+```
