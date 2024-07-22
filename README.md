@@ -42,3 +42,4 @@ db.update(field_name=("name","age"),value=("Bob",12))
 ```py
 db.delete(field="name",value="Bob")
 ```
+## Operation Table
