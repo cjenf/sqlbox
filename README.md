@@ -7,7 +7,8 @@ pip install sqlbox
 > [!NOTE]
 > **sqlbox v0.01 has only some basic table operations**
 ## Usage
-### creat database
+### Creat Database
 ```py
 import sqlbox
+db=sqlbox.sqlbox(database_name="test.db")
 ```
