@@ -23,7 +23,7 @@ db=sqlbox.sqlbox(database_name="test.db")
       text='TEXT',
       blob='BLOB',
       null='NULL',}
- ```
+ > ```
 ```py
 db.create_table("users",{"id":"int_prinary_key","name":"text","age":"int"})
 ```
