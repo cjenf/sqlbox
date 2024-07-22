@@ -12,3 +12,7 @@ pip install sqlbox
 import sqlbox
 db=sqlbox.sqlbox(database_name="test.db")
 ```
+Table
+```py
+db.create_table("users",{"id":"int_prinary_key","name":"text","age":"int"})
+```
