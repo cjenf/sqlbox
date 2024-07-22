@@ -16,9 +16,9 @@ db=sqlbox.sqlbox(database_name="test.db")
 > [!NOTE]
 > **data type**<br>
 > ```py
-> int_primary_key='INTEGER PRIMARY KEY', <br>
-        text_primary_key='TEXT PRIMARY KEY',
-        int='INTEGER',
+> int_primary_key='INTEGER PRIMARY KEY', 
+> text_primary_key='TEXT PRIMARY KEY',
+> int='INTEGER',
         float='FLOAT',
         text='TEXT',
         blob='BLOB',
