@@ -15,15 +15,15 @@ db=sqlbox.sqlbox(database_name="test.db")
 ### Table
 > [!NOTE]
 > **data type**<br>
-> `{
->     int_primary_key='INTEGER PRIMARY KEY',
+> ```py
+> {int_primary_key='INTEGER PRIMARY KEY',
       text_primary_key='TEXT PRIMARY KEY',
       int='INTEGER',
       float='FLOAT',
       text='TEXT',
       blob='BLOB',
       null='NULL',
->   }`
+>   }```
 ```py
 db.create_table("users",{"id":"int_prinary_key","name":"text","age":"int"})
 ```
